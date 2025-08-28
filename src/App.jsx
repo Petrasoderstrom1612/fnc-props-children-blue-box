@@ -8,7 +8,9 @@ function App() {
     <>
     <Toggle>
       <Toggle.Button>
-        <div className="box"></div>
+        <Toggle.Display>
+          {(on) => {return <div className={`box ${on ? "filled" : ""}`}></div>}}
+        </Toggle.Display>
       </Toggle.Button>
     </Toggle>
     </>
@@ -16,3 +18,4 @@ function App() {
 }
 
 export default App
+

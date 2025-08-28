@@ -3,6 +3,7 @@ import { ContextToggle } from './Toggle'
 
 const ToggleButton = ({children}) => {
     const {toggle} = React.useContext(ContextToggle)
+    console.log(toggle)
 
   return (              //don't forget to import toggle as context, it is not coming through props
     <div onClick={toggle}> 

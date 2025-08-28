@@ -1,11 +1,12 @@
 import React from 'react'
-import {useRef} from "react" //don't forget {}
+//import {useRef} from "react" //don't forget {}
 
 const ContextToggle = React.createContext()
 
 const Toggle = ({children}) => { //you have to declare {}
     const [on, setOn] = React.useState(false)
     // const nonFirstRenderRef = useRef(true)
+    console.log(on)
 
     const toggle = () => {
         console.log("toggled")
