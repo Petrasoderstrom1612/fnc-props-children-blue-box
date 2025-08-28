@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Toggle from "./components/Toggle"
+import Toggle from "./components/index"
 
 
 function App() {
@@ -7,7 +7,9 @@ function App() {
   return (
     <>
     <Toggle>
-      <div className="box"></div>
+      <Toggle.Button>
+        <div className="box"></div>
+      </Toggle.Button>
     </Toggle>
     </>
   )
